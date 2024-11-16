@@ -1,4 +1,4 @@
-// pages/api/run.js
+
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { code, language } = req.body;
@@ -6,7 +6,6 @@ export default async function handler(req, res) {
         let output;
 
         try {
-            // For demonstration, we will just return the code and language
             output = `Running ${language} code:\n${code}`;
         } catch (error) {
             output = `Error: ${error.message}`;

@@ -5,7 +5,7 @@ import WebcamComponent from '../components/Webcam';
 import ChatLog from '../components/ChatLog';
 import InputBar from '../components/InputBar';
 import dynamic from 'next/dynamic';
-import OutputPanel from '../components/OutputPanel'; // Assuming you have an OutputPanel component
+import OutputPanel from '../components/OutputPanel'; 
 import styles from '../styles/Home.module.css';
 
 // Dynamically import the Monaco Editor with SSR disabled
@@ -65,7 +65,7 @@ export default function HomePage() {
                         setCode={setCode}
                         language={language}
                         setLanguage={setLanguage}
-                        onRun={handleRunCode}  // Ensure this is passed as a prop
+                        onRun={handleRunCode}  
                     />
                 </div>
                 <OutputPanel output={output} /> {/* Displaying output here */}

@@ -1,4 +1,4 @@
-// pages/api/compile.js
+
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { code, language } = req.body;
@@ -29,7 +29,7 @@ export default async function handler(req, res) {
             error = err.message || 'An error occurred during execution';
         }
 
-        // Restore original console.log
+        
         console.log = originalLog;
 
         if (error) {

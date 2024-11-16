@@ -1,7 +1,7 @@
-// components/CodeEditor.js
+
 import React, { useEffect, useRef } from 'react';
 import Editor from '@monaco-editor/react';
-import LanguageSelector from './LanguageSelector'; // Import the LanguageSelector
+import LanguageSelector from './LanguageSelector';
 import styles from '../styles/CodeEditor.module.css';
 
 const CodeEditor = ({ code, setCode, language, setLanguage, onRun, onSubmit }) => {

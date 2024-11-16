@@ -1,9 +1,9 @@
-// components/LanguageSelector.js
+
 import React from 'react';
 import styles from '../styles/LanguageSelector.module.css';
 
 const LanguageSelector = ({ language, setLanguage }) => {
-  const languages = ['javascript', 'python', 'cpp']; // Add more languages as needed
+  const languages = ['javascript', 'python', 'c++', 'Java']; 
 
   return (
     <div className={styles.languageSelector}>

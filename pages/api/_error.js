@@ -1,4 +1,4 @@
-// /pages/_error.js
+
 export default function ErrorPage({ statusCode }) {
     return (
       <div style={{ padding: '20px', textAlign: 'center' }}>

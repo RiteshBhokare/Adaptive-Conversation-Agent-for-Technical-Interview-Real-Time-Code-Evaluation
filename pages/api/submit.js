@@ -6,7 +6,6 @@ app.use(express.json());
 app.post('/api/submit', (req, res) => {
   const { code, language } = req.body;
 
-  // You can add validation and processing logic here
   console.log('Received code:', code);
   console.log('Language:', language);
 
