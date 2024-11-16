@@ -1,0 +1,17 @@
+/* styles/LanguageSelector.module.css */
+.languageSelector {
+  margin-bottom: 10px; /* Space between the selector and the editor */
+}
+
+.languageSelector label {
+  margin-right: 10px; /* Space between label and select */
+  color: #fff; /* Text color */
+}
+
+.languageSelector select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+}

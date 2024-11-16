@@ -1,0 +1,47 @@
+/* styles/CodeEditor.module.css */
+
+.editorContainer {
+    background-color: #1e1e1e; /* Dark background */
+    border: 1px solid #3e3e3e;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Ensure enough height */
+    position: relative; 
+}
+
+.controls {
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: flex-end; /* Align items to the left */
+    margin-bottom: 10px; /* Space below the controls */
+    gap: 10px; /* Space between buttons */
+    z-index: 10; /* Ensure visibility */
+
+}
+
+.runButton,
+.submitButton {
+    padding: 10px 20px; /* Adjust padding for larger buttons */
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s;
+}
+
+.runButton:hover,
+.submitButton:hover {
+    background-color: #005a99; /* Darker shade on hover */
+}
+
+/* styles/CodeEditor.module.css */
+.controlsContainer {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 10px; /* Space below the controls */
+}
+

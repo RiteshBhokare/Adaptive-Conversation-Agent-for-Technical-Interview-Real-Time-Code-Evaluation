@@ -1,0 +1,210 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Local style for h4 */
+.terminalTitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fbfbfb;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  padding: 10px;
+}
+
+.leftPanel,
+.rightPanel {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rightPanel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Webcam Section */
+.webcamSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 230px;
+}
+
+.webcamSection video {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Chat Section */
+.chatSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: auto;
+  height: 300px;
+  border: 1px solid #444;
+}
+
+.chatSection input {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+  flex: 1;
+}
+
+.chatSection button {
+  background-color: #007acc;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.chatSection button:hover {
+  background-color: #005a99;
+}
+
+/* Code Editor Section */
+.codeEditorSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #444;
+}
+
+.editorContainer {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 8px;
+}
+
+
+.languageSelector {
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.runButton,
+.submitButton {
+  padding: 8px 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.runButton:hover,
+.submitButton:hover {
+  background-color: #005a99;
+}
+
+/* Output Section */
+.outputSection {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.terminalTitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.terminalOutput pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-y: auto;
+}
+
+/* Scrollable Chat Log */
+.chatLog {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.chatLog div {
+  margin-bottom: 8px;
+}
+
+/* Hover effects for all panels */
+.panel {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.panel:hover {
+  background-color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    padding: 5px;
+  }
+
+  .webcamSection {
+    height: 300px;
+  }
+}
